@@ -165,7 +165,7 @@ For this use case, there is an important integration pattern, to retrieve the so
 
 ![Retrieving soccer field information](images/retrieving-soccer-field-info.png)
 
-In this partner, focus on 3 architectural patterns:
+In this pattern, focus on 3 architectural patterns:
 
 1. Integration with an External System
 
@@ -235,7 +235,7 @@ In this partner, focus on 3 architectural patterns:
         
         Repeat the same receipt for creating the **Field_CreateOrUpdate** action.  
 
-1. **Local Replica of data**
+1. **Synchronization of data**
 
 The **Field_Sync** module is going to make the asynchronous synchronization logic from the external system into the local cached one. This module holds the timers and the logic, referencing the **Field_IS** and **Field_CS**. 
 
